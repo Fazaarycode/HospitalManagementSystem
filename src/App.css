@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+}
+
+.nav{
+  background: yellow;
+  color: black;
+  padding:10px 900px;
+}
+
+.patient {
+  background:lightseagreen;
+  height: 920px;
+  margin-bottom: 30px;
+}
+
+.left,.right{
+  font-weight: bold;
+  font-style: Sans-serif;
+  font-size: 24px;
+  padding: 5px 10px;
+
+}
+
+.right{
+  float:right;
+}
+
+.pat-nav{
+  width: 100%;
+  background:yellow;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.i1{
+  margin-right: 5px;
+  color:black;
+
+}
+.i1::after{
+  color:black;
+  content:'  |'
+}
