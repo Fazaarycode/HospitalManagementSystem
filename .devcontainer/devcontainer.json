@@ -10,4 +10,5 @@
     }
   },
   "forwardPorts": [3000],
-  "postCreateCommand": "apt-get update && apt-get install -y curl && curl -sS https://webi.sh/gh | sh && npm install && git checkout -b fix/my-fix-branch || echo 'Branch already exists or error occurred'"}
+  "postCreateCommand": "echo 'Installing GitHub CLI...Please wait ' && curl -sS https://webi.sh/gh | sh && echo 'GitHub CLI installation complete.'"
+}
