@@ -1,6 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/typescript-node",
-  "postCreateCommand": "apt-get update && apt-get install -y curl && curl -sS https://webi.sh/gh | sh",
+  "image": "captainbicboi/basic-image",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -10,5 +9,6 @@
       ]
     }
   },
-  "forwardPorts": [3000]
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install"
 }
