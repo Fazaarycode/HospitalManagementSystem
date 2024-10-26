@@ -1,16 +1,17 @@
 on:
   pull_request:
-    types: [opened, reopened, ready_for_review]
+    types: [opened, reopened, ready_for_review, synchronize]  # Added synchronize
   issue_comment:
+    types: [created]  # Optional: Run when a comment is created on an issue
 jobs:
   pr_agent_job:
-    if: ${{ github.event.sender.type != 'Bot' }}
+    if: ${{ github.event.sender.type != 'Bot' }}  # Ignore bot comments
     runs-on: ubuntu-latest
     permissions:
       issues: write
       pull-requests: write
       contents: write
-    name: Run pr agent on every pull request, respond to user comments
+    name: Run PR agent on every pull request, respond to user comments
     steps:
       - name: PR Agent action step
         id: pragent
