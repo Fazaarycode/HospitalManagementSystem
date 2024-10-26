@@ -1,9 +1,10 @@
 {
   "image": "mcr.microsoft.com/devcontainers/typescript-node",
-
+   "postCreateCommand": "apt-get update && apt-get install -y gh && apt-get install curl", 
   "customizations": {
     "vscode": {
-      "extensions": ["streetsidesoftware.code-spell-checker"]
+      "extensions": ["streetsidesoftware.code-spell-checker",     "ms-vscode.node-debug2",
+    "dbaeumer.vscode-eslint"]
     }
   },
   "forwardPorts": [3000]
