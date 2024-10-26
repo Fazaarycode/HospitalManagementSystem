@@ -1,0 +1,15 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "node": "18"  // or your preferred Node.js version
+  },
+  "postCreateCommand": "npm install",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.node-debug2",
+    "dbaeumer.vscode-eslint"
+  ],
+  "remoteUser": "vscode"  // Use the default user in the universal image
+}
