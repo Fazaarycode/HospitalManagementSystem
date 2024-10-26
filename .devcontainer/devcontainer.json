@@ -1,8 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "node": "18"  // or your preferred Node.js version
-  },
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
   "postCreateCommand": "npm install",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
