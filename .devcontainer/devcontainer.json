@@ -1,12 +1,10 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
-  "postCreateCommand": "npm install",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+  "image": "mcr.microsoft.com/devcontainers/typescript-node",
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["streetsidesoftware.code-spell-checker"]
+    }
   },
-  "extensions": [
-    "ms-vscode.node-debug2",
-    "dbaeumer.vscode-eslint"
-  ],
-  "remoteUser": "vscode"  // Use the default user in the universal image
+  "forwardPorts": [3000]
 }
