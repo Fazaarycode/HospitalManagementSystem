@@ -7,10 +7,10 @@ export default function SideNavbar() {
             <h2>Quick links</h2>
             <ul>
                 <li>
-                    <Link to ="/">DashBoard</Link>
+                    <Link to ="/">Dashboard</Link>
                 </li>
                 <li>
-                    <Link to ="/bills">Bills</Link>
+                    <Link to ="/bills">Invoices</Link>
                 </li>
                 <li>
                     <Link to ="/patient">Patient</Link>
